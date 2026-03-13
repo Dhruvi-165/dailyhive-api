@@ -210,112 +210,370 @@
 
   "providerNotifications": [],
 
-  "restaurants": [
-  {
-    "id": 1,
-    "name": "Dominos Pizza",
-    "rating": 4.5,
-    "deliveryTime": "30 mins",
-    "category": "Pizza",
-    "image": "pizza"
-  },
-  {
-    "id": 2,
-    "name": "McDonald's",
-    "rating": 4.3,
-    "deliveryTime": "25 mins",
-    "category": "Fast Food",
-    "image": "burger"
-  },
-  {
-    "id": 3,
-    "name": "KFC",
-    "rating": 4.4,
-    "deliveryTime": "28 mins",
-    "category": "Chicken",
-    "image": "chicken"
-  },
-  {
-    "id": 4,
-    "name": "Subway",
-    "rating": 4.2,
-    "deliveryTime": "20 mins",
-    "category": "Healthy",
-    "image": "sandwich"
-  },
-  {
-    "id": 5,
-    "name": "Pizza Hut",
-    "rating": 4.3,
-    "deliveryTime": "32 mins",
-    "category": "Pizza",
-    "image": "pizza"
-  }
-],
-"menu": [
-  {
-    "id": 1,
-    "restaurantId": 1,
-    "name": "Margherita Pizza",
-    "price": 199,
-    "category": "Pizza"
-  },
-  {
-    "id": 2,
-    "restaurantId": 1,
-    "name": "Peppy Paneer Pizza",
-    "price": 299,
-    "category": "Pizza"
-  },
-  {
-    "id": 3,
-    "restaurantId": 2,
-    "name": "Veg Burger",
-    "price": 129,
-    "category": "Burger"
-  },
-  {
-    "id": 4,
-    "restaurantId": 2,
-    "name": "McAloo Tikki",
-    "price": 99,
-    "category": "Burger"
-  },
-  {
-    "id": 5,
-    "restaurantId": 3,
-    "name": "Chicken Bucket",
-    "price": 399,
-    "category": "Chicken"
-  },
-  {
-    "id": 6,
-    "restaurantId": 3,
-    "name": "Zinger Burger",
-    "price": 189,
-    "category": "Burger"
-  },
-  {
-    "id": 7,
-    "restaurantId": 4,
-    "name": "Veg Subway",
-    "price": 149,
-    "category": "Sandwich"
-  },
-  {
-    "id": 8,
-    "restaurantId": 4,
-    "name": "Paneer Subway",
-    "price": 179,
-    "category": "Sandwich"
-  },
-  {
-    "id": 9,
-    "restaurantId": 5,
-    "name": "Farmhouse Pizza",
-    "price": 329,
-    "category": "Pizza"
-  }
-]
+ "restaurants":[
 
+{
+"id":1,
+"name":"Dominos Pizza",
+"branch":"Satellite",
+"city":"Ahmedabad",
+"area":"Satellite",
+"rating":4.5,
+"ratingCount":3200,
+"deliveryTime":30,
+"deliveryFee":30,
+"priceForTwo":400,
+"category":"Pizza",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1604382354936-07c5d9983bd3"
+},
+
+{
+"id":2,
+"name":"Dominos Pizza",
+"branch":"Alkapuri",
+"city":"Vadodara",
+"area":"Alkapuri",
+"rating":4.4,
+"ratingCount":2800,
+"deliveryTime":28,
+"deliveryFee":25,
+"priceForTwo":420,
+"category":"Pizza",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+},
+
+{
+"id":3,
+"name":"Dominos Pizza",
+"branch":"Vallabh Vidyanagar",
+"city":"Anand",
+"area":"Vallabh Vidyanagar",
+"rating":4.3,
+"ratingCount":2100,
+"deliveryTime":26,
+"deliveryFee":25,
+"priceForTwo":380,
+"category":"Pizza",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1593560708920-61dd98c46a4e"
+},
+
+{
+"id":4,
+"name":"McDonald's",
+"branch":"Prahlad Nagar",
+"city":"Ahmedabad",
+"area":"Prahlad Nagar",
+"rating":4.3,
+"ratingCount":2800,
+"deliveryTime":25,
+"deliveryFee":25,
+"priceForTwo":350,
+"category":"Fast Food",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1550547660-d9450f859349"
+},
+
+{
+"id":5,
+"name":"McDonald's",
+"branch":"Alkapuri",
+"city":"Vadodara",
+"area":"Alkapuri",
+"rating":4.2,
+"ratingCount":2400,
+"deliveryTime":24,
+"deliveryFee":20,
+"priceForTwo":340,
+"category":"Fast Food",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+},
+
+{
+"id":6,
+"name":"KFC",
+"branch":"Bodakdev",
+"city":"Ahmedabad",
+"area":"Bodakdev",
+"rating":4.4,
+"ratingCount":2600,
+"deliveryTime":28,
+"deliveryFee":35,
+"priceForTwo":450,
+"category":"Chicken",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1562967916-eb82221dfb92"
+},
+
+{
+"id":7,
+"name":"KFC",
+"branch":"Fatehgunj",
+"city":"Vadodara",
+"area":"Fatehgunj",
+"rating":4.3,
+"ratingCount":2300,
+"deliveryTime":29,
+"deliveryFee":30,
+"priceForTwo":440,
+"category":"Chicken",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1606756790138-261d2b21cd43"
+},
+
+{
+"id":8,
+"name":"Subway",
+"branch":"Vastrapur",
+"city":"Ahmedabad",
+"area":"Vastrapur",
+"rating":4.2,
+"ratingCount":2100,
+"deliveryTime":20,
+"deliveryFee":20,
+"priceForTwo":300,
+"category":"Healthy",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85"
+},
+
+{
+"id":9,
+"name":"Biryani House",
+"branch":"Navrangpura",
+"city":"Ahmedabad",
+"area":"Navrangpura",
+"rating":4.5,
+"ratingCount":2400,
+"deliveryTime":35,
+"deliveryFee":40,
+"priceForTwo":450,
+"category":"Biryani",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a"
+},
+
+{
+"id":10,
+"name":"Biryani House",
+"branch":"Vallabh Vidyanagar",
+"city":"Anand",
+"area":"Vallabh Vidyanagar",
+"rating":4.4,
+"ratingCount":2000,
+"deliveryTime":32,
+"deliveryFee":35,
+"priceForTwo":420,
+"category":"Biryani",
+"isOpen":true,
+"image":"https://images.unsplash.com/photo-1604908177073-43d39d5a4c1d"
+}
+
+],
+"categories":[
+{"id":1,"name":"Pizza","icon":"pizza"},
+{"id":2,"name":"Burger","icon":"burger"},
+{"id":3,"name":"Chicken","icon":"chicken"},
+{"id":4,"name":"Biryani","icon":"biryani"},
+{"id":5,"name":"Sandwich","icon":"sandwich"},
+{"id":6,"name":"Coffee","icon":"coffee"},
+{"id":7,"name":"Dessert","icon":"dessert"}
+],
+"offers":[
+{
+"id":1,
+"code":"WELCOME50",
+"discount":50,
+"minOrder":199
+},
+{
+"id":2,
+"code":"FREEDEL",
+"discount":30,
+"minOrder":299
+},
+{
+"id":3,
+"code":"FLAT100",
+"discount":100,
+"minOrder":499
+}
+],
+"restaurant_reviews":[
+{
+"id":1,
+"restaurantId":1,
+"user":"Dhruvi",
+"rating":5,
+"comment":"Amazing pizza!"
+},
+{
+"id":2,
+"restaurantId":2,
+"user":"Rahul",
+"rating":4,
+"comment":"Burgers were good"
+}
+],
+"menu":[
+{"id":1,"restaurantId":1,"name":"Margherita Pizza","price":199,"category":"Pizza","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?margherita-pizza"},
+{"id":2,"restaurantId":1,"name":"Farmhouse Pizza","price":249,"category":"Pizza","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?farmhouse-pizza"},
+{"id":3,"restaurantId":1,"name":"Peppy Paneer Pizza","price":269,"category":"Pizza","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-pizza"},
+{"id":4,"restaurantId":1,"name":"Cheese Burst Pizza","price":299,"category":"Pizza","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?cheese-pizza"},
+{"id":5,"restaurantId":1,"name":"Veg Extravaganza","price":319,"category":"Pizza","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?vegetable-pizza"},
+{"id":6,"restaurantId":1,"name":"Paneer Tikka Pizza","price":279,"category":"Pizza","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-tikka-pizza"},
+{"id":7,"restaurantId":1,"name":"Mexican Green Wave","price":289,"category":"Pizza","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?mexican-pizza"},
+{"id":8,"restaurantId":1,"name":"Corn & Cheese Pizza","price":229,"category":"Pizza","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?corn-pizza"},
+{"id":9,"restaurantId":1,"name":"Capsicum Pizza","price":219,"category":"Pizza","isVeg":true,"rating":4.1,"image":"https://source.unsplash.com/600x400/?capsicum-pizza"},
+{"id":10,"restaurantId":1,"name":"Veggie Paradise","price":249,"category":"Pizza","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?veggie-pizza"},
+{"id":11,"restaurantId":1,"name":"Garlic Bread","price":119,"category":"Sides","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?garlic-bread"},
+{"id":12,"restaurantId":1,"name":"Cheese Garlic Bread","price":149,"category":"Sides","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?cheese-bread"},
+{"id":13,"restaurantId":1,"name":"Choco Lava Cake","price":99,"category":"Dessert","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?lava-cake"},
+{"id":14,"restaurantId":1,"name":"Paneer Pasta","price":179,"category":"Pasta","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?paneer-pasta"},
+{"id":15,"restaurantId":1,"name":"Veg Alfredo Pasta","price":189,"category":"Pasta","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?alfredo-pasta"},
+
+{"id":16,"restaurantId":2,"name":"Veg Burger","price":129,"category":"Burger","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-burger"},
+{"id":17,"restaurantId":2,"name":"McAloo Tikki","price":99,"category":"Burger","isVeg":true,"rating":4.1,"image":"https://source.unsplash.com/600x400/?potato-burger"},
+{"id":18,"restaurantId":2,"name":"Paneer Burger","price":149,"category":"Burger","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?paneer-burger"},
+{"id":19,"restaurantId":2,"name":"Cheese Burger","price":159,"category":"Burger","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?cheese-burger"},
+{"id":20,"restaurantId":2,"name":"Chicken Burger","price":179,"category":"Burger","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-burger"},
+{"id":21,"restaurantId":2,"name":"Double Chicken Burger","price":199,"category":"Burger","isVeg":false,"rating":4.6,"image":"https://source.unsplash.com/600x400/?double-burger"},
+{"id":22,"restaurantId":2,"name":"French Fries","price":99,"category":"Sides","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?fries"},
+{"id":23,"restaurantId":2,"name":"Peri Peri Fries","price":119,"category":"Sides","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?peri-peri-fries"},
+{"id":24,"restaurantId":2,"name":"Chicken Nuggets","price":159,"category":"Chicken","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-nuggets"},
+{"id":25,"restaurantId":2,"name":"Veg Wrap","price":139,"category":"Wrap","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-wrap"},
+{"id":26,"restaurantId":2,"name":"Chicken Wrap","price":169,"category":"Wrap","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-wrap"},
+{"id":27,"restaurantId":2,"name":"Cold Coffee","price":119,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?cold-coffee"},
+{"id":28,"restaurantId":2,"name":"Chocolate Shake","price":129,"category":"Beverage","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chocolate-milkshake"},
+{"id":29,"restaurantId":2,"name":"Vanilla Sundae","price":89,"category":"Dessert","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?ice-cream"},
+{"id":30,"restaurantId":2,"name":"Brownie Sundae","price":119,"category":"Dessert","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?brownie-dessert"},
+{"id":31,"restaurantId":3,"name":"Chicken Bucket","price":399,"category":"Chicken","isVeg":false,"rating":4.6,"image":"https://source.unsplash.com/600x400/?fried-chicken"},
+{"id":32,"restaurantId":3,"name":"Hot Wings","price":249,"category":"Chicken","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-wings"},
+{"id":33,"restaurantId":3,"name":"Chicken Popcorn","price":199,"category":"Chicken","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-popcorn"},
+{"id":34,"restaurantId":3,"name":"Chicken Zinger","price":189,"category":"Burger","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?zinger-burger"},
+{"id":35,"restaurantId":3,"name":"Chicken Roll","price":169,"category":"Wrap","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-roll"},
+{"id":36,"restaurantId":3,"name":"Chicken Rice Bowl","price":199,"category":"Rice","isVeg":false,"rating":4.2,"image":"https://source.unsplash.com/600x400/?chicken-rice"},
+{"id":37,"restaurantId":3,"name":"Spicy Chicken Burger","price":179,"category":"Burger","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?spicy-burger"},
+{"id":38,"restaurantId":3,"name":"Chicken Strips","price":229,"category":"Chicken","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-strips"},
+{"id":39,"restaurantId":3,"name":"Chicken Nuggets","price":189,"category":"Chicken","isVeg":false,"rating":4.2,"image":"https://source.unsplash.com/600x400/?nuggets"},
+{"id":40,"restaurantId":3,"name":"Chicken Wrap Deluxe","price":199,"category":"Wrap","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-wrap"},
+{"id":41,"restaurantId":3,"name":"Chicken Fries","price":149,"category":"Sides","isVeg":false,"rating":4.2,"image":"https://source.unsplash.com/600x400/?chicken-fries"},
+{"id":42,"restaurantId":3,"name":"Chicken Gravy Bowl","price":179,"category":"Rice","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-bowl"},
+{"id":43,"restaurantId":3,"name":"Chicken Combo Meal","price":329,"category":"Combo","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-meal"},
+{"id":44,"restaurantId":3,"name":"BBQ Chicken Wings","price":259,"category":"Chicken","isVeg":false,"rating":4.6,"image":"https://source.unsplash.com/600x400/?bbq-wings"},
+{"id":45,"restaurantId":3,"name":"Chicken Sandwich","price":169,"category":"Sandwich","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-sandwich"},
+
+{"id":46,"restaurantId":4,"name":"Veg Subway","price":149,"category":"Sandwich","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-sandwich"},
+{"id":47,"restaurantId":4,"name":"Paneer Subway","price":179,"category":"Sandwich","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-sandwich"},
+{"id":48,"restaurantId":4,"name":"Chicken Subway","price":199,"category":"Sandwich","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-sub"},
+{"id":49,"restaurantId":4,"name":"Tuna Subway","price":219,"category":"Sandwich","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?tuna-sandwich"},
+{"id":50,"restaurantId":4,"name":"Cheese Sandwich","price":139,"category":"Sandwich","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?cheese-sandwich"},
+{"id":51,"restaurantId":4,"name":"Veg Wrap","price":159,"category":"Wrap","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?veg-wrap"},
+{"id":52,"restaurantId":4,"name":"Paneer Wrap","price":169,"category":"Wrap","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-wrap"},
+{"id":53,"restaurantId":4,"name":"Chicken Wrap","price":189,"category":"Wrap","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-wrap"},
+{"id":54,"restaurantId":4,"name":"Veg Salad","price":129,"category":"Salad","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-salad"},
+{"id":55,"restaurantId":4,"name":"Chicken Salad","price":159,"category":"Salad","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-salad"},
+{"id":56,"restaurantId":4,"name":"Cold Coffee","price":119,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?cold-coffee"},
+{"id":57,"restaurantId":4,"name":"Chocolate Shake","price":129,"category":"Beverage","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?milkshake"},
+{"id":58,"restaurantId":4,"name":"Veg Combo Meal","price":229,"category":"Combo","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?sandwich-meal"},
+{"id":59,"restaurantId":4,"name":"Paneer Combo Meal","price":249,"category":"Combo","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-meal"},
+{"id":60,"restaurantId":4,"name":"Chicken Combo Meal","price":269,"category":"Combo","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-meal"},
+{"id":61,"restaurantId":5,"name":"Classic Veg Pizza","price":249,"category":"Pizza","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?veg-pizza"},
+{"id":62,"restaurantId":5,"name":"Paneer Supreme Pizza","price":279,"category":"Pizza","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?paneer-pizza"},
+{"id":63,"restaurantId":5,"name":"Mexican Veg Pizza","price":269,"category":"Pizza","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?mexican-pizza"},
+{"id":64,"restaurantId":5,"name":"Corn Cheese Pizza","price":239,"category":"Pizza","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?corn-pizza"},
+{"id":65,"restaurantId":5,"name":"Veggie Delight Pizza","price":259,"category":"Pizza","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?vegetable-pizza"},
+{"id":66,"restaurantId":5,"name":"Garlic Breadsticks","price":119,"category":"Sides","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?breadsticks"},
+{"id":67,"restaurantId":5,"name":"Cheese Breadsticks","price":139,"category":"Sides","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?cheese-bread"},
+{"id":68,"restaurantId":5,"name":"Chocolate Lava Cake","price":99,"category":"Dessert","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?chocolate-cake"},
+{"id":69,"restaurantId":5,"name":"Veg Pasta","price":179,"category":"Pasta","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?veg-pasta"},
+{"id":70,"restaurantId":5,"name":"Alfredo Pasta","price":189,"category":"Pasta","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?alfredo-pasta"},
+{"id":71,"restaurantId":5,"name":"Cheese Pizza","price":229,"category":"Pizza","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?cheese-pizza"},
+{"id":72,"restaurantId":5,"name":"Paneer Pizza","price":269,"category":"Pizza","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-tikka-pizza"},
+{"id":73,"restaurantId":5,"name":"Veg Supreme Pizza","price":299,"category":"Pizza","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?supreme-pizza"},
+{"id":74,"restaurantId":5,"name":"Garlic Cheese Bread","price":149,"category":"Sides","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?garlic-cheese-bread"},
+{"id":75,"restaurantId":5,"name":"Chocolate Brownie","price":119,"category":"Dessert","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?brownie"},
+
+{"id":76,"restaurantId":6,"name":"Veg Whopper","price":149,"category":"Burger","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-whopper"},
+{"id":77,"restaurantId":6,"name":"Paneer Whopper","price":169,"category":"Burger","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?paneer-burger"},
+{"id":78,"restaurantId":6,"name":"Chicken Whopper","price":189,"category":"Burger","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-whopper"},
+{"id":79,"restaurantId":6,"name":"Double Chicken Burger","price":209,"category":"Burger","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?double-burger"},
+{"id":80,"restaurantId":6,"name":"Veggie Burger","price":139,"category":"Burger","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veggie-burger"},
+{"id":81,"restaurantId":6,"name":"Chicken Nuggets","price":159,"category":"Chicken","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-nuggets"},
+{"id":82,"restaurantId":6,"name":"Onion Rings","price":129,"category":"Sides","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?onion-rings"},
+{"id":83,"restaurantId":6,"name":"French Fries","price":109,"category":"Sides","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?fries"},
+{"id":84,"restaurantId":6,"name":"Chicken Wrap","price":179,"category":"Wrap","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-wrap"},
+{"id":85,"restaurantId":6,"name":"Veg Wrap","price":149,"category":"Wrap","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?veg-wrap"},
+{"id":86,"restaurantId":6,"name":"Cold Coffee","price":119,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?cold-coffee"},
+{"id":87,"restaurantId":6,"name":"Chocolate Shake","price":129,"category":"Beverage","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chocolate-milkshake"},
+{"id":88,"restaurantId":6,"name":"Vanilla Shake","price":119,"category":"Beverage","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?vanilla-milkshake"},
+{"id":89,"restaurantId":6,"name":"Chicken Combo Meal","price":299,"category":"Combo","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?burger-meal"},
+{"id":90,"restaurantId":6,"name":"Veg Combo Meal","price":249,"category":"Combo","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?burger-combo"},
+{"id":91,"restaurantId":7,"name":"Cappuccino","price":169,"category":"Coffee","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?cappuccino"},
+{"id":92,"restaurantId":7,"name":"Latte","price":179,"category":"Coffee","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?latte"},
+{"id":93,"restaurantId":7,"name":"Mocha","price":189,"category":"Coffee","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?mocha-coffee"},
+{"id":94,"restaurantId":7,"name":"Cold Brew","price":199,"category":"Coffee","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?cold-brew"},
+{"id":95,"restaurantId":7,"name":"Caramel Latte","price":209,"category":"Coffee","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?caramel-latte"},
+{"id":96,"restaurantId":7,"name":"Chocolate Muffin","price":129,"category":"Dessert","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?muffin"},
+{"id":97,"restaurantId":7,"name":"Blueberry Muffin","price":139,"category":"Dessert","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?blueberry-muffin"},
+{"id":98,"restaurantId":7,"name":"Croissant","price":149,"category":"Bakery","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?croissant"},
+{"id":99,"restaurantId":7,"name":"Veg Sandwich","price":159,"category":"Sandwich","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?veg-sandwich"},
+{"id":100,"restaurantId":7,"name":"Paneer Sandwich","price":179,"category":"Sandwich","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?paneer-sandwich"},
+
+{"id":101,"restaurantId":8,"name":"Chole Bhature","price":169,"category":"Indian","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chole-bhature"},
+{"id":102,"restaurantId":8,"name":"Raj Kachori","price":139,"category":"Indian","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?raj-kachori"},
+{"id":103,"restaurantId":8,"name":"Dahi Puri","price":119,"category":"Indian","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?dahi-puri"},
+{"id":104,"restaurantId":8,"name":"Pav Bhaji","price":149,"category":"Indian","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?pav-bhaji"},
+{"id":105,"restaurantId":8,"name":"Paneer Butter Masala","price":229,"category":"Indian","isVeg":true,"rating":4.6,"image":"https://source.unsplash.com/600x400/?paneer-butter-masala"},
+{"id":106,"restaurantId":8,"name":"Veg Biryani","price":199,"category":"Indian","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?veg-biryani"},
+{"id":107,"restaurantId":8,"name":"Dal Makhani","price":189,"category":"Indian","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?dal-makhani"},
+{"id":108,"restaurantId":8,"name":"Butter Naan","price":49,"category":"Indian","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?naan"},
+{"id":109,"restaurantId":8,"name":"Gulab Jamun","price":99,"category":"Dessert","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?gulab-jamun"},
+{"id":110,"restaurantId":8,"name":"Rasgulla","price":99,"category":"Dessert","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?rasgulla"},
+
+{"id":111,"restaurantId":9,"name":"Chicken Biryani","price":249,"category":"Biryani","isVeg":false,"rating":4.6,"image":"https://source.unsplash.com/600x400/?chicken-biryani"},
+{"id":112,"restaurantId":9,"name":"Mutton Biryani","price":289,"category":"Biryani","isVeg":false,"rating":4.7,"image":"https://source.unsplash.com/600x400/?mutton-biryani"},
+{"id":113,"restaurantId":9,"name":"Veg Biryani","price":199,"category":"Biryani","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?veg-biryani"},
+{"id":114,"restaurantId":9,"name":"Egg Biryani","price":219,"category":"Biryani","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?egg-biryani"},
+{"id":115,"restaurantId":9,"name":"Chicken Tikka","price":229,"category":"Chicken","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-tikka"},
+{"id":116,"restaurantId":9,"name":"Chicken Curry","price":219,"category":"Chicken","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-curry"},
+{"id":117,"restaurantId":9,"name":"Butter Chicken","price":239,"category":"Chicken","isVeg":false,"rating":4.6,"image":"https://source.unsplash.com/600x400/?butter-chicken"},
+{"id":118,"restaurantId":9,"name":"Tandoori Chicken","price":249,"category":"Chicken","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?tandoori-chicken"},
+{"id":119,"restaurantId":9,"name":"Chicken Fried Rice","price":189,"category":"Rice","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?fried-rice"},
+{"id":120,"restaurantId":9,"name":"Chicken Noodles","price":179,"category":"Noodles","isVeg":false,"rating":4.2,"image":"https://source.unsplash.com/600x400/?chicken-noodles"},
+
+{"id":121,"restaurantId":10,"name":"Veg Taco","price":129,"category":"Mexican","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?taco"},
+{"id":122,"restaurantId":10,"name":"Chicken Taco","price":149,"category":"Mexican","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-taco"},
+{"id":123,"restaurantId":10,"name":"Paneer Taco","price":139,"category":"Mexican","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?paneer-taco"},
+{"id":124,"restaurantId":10,"name":"Nachos","price":159,"category":"Mexican","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?nachos"},
+{"id":125,"restaurantId":10,"name":"Cheese Nachos","price":179,"category":"Mexican","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?cheese-nachos"},
+{"id":126,"restaurantId":10,"name":"Chicken Burrito","price":199,"category":"Mexican","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?burrito"},
+{"id":127,"restaurantId":10,"name":"Veg Burrito","price":179,"category":"Mexican","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?veg-burrito"},
+{"id":128,"restaurantId":10,"name":"Quesadilla","price":189,"category":"Mexican","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?quesadilla"},
+{"id":129,"restaurantId":10,"name":"Chicken Quesadilla","price":209,"category":"Mexican","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chicken-quesadilla"},
+{"id":130,"restaurantId":10,"name":"Mexican Rice Bowl","price":189,"category":"Mexican","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?mexican-rice"},
+{"id":131,"restaurantId":10,"name":"Chicken Rice Bowl","price":199,"category":"Mexican","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?mexican-bowl"},
+{"id":132,"restaurantId":10,"name":"Churros","price":119,"category":"Dessert","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?churros"},
+{"id":133,"restaurantId":10,"name":"Chocolate Churros","price":129,"category":"Dessert","isVeg":true,"rating":4.5,"image":"https://source.unsplash.com/600x400/?chocolate-churros"},
+{"id":134,"restaurantId":10,"name":"Mexican Combo Meal","price":279,"category":"Combo","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?mexican-meal"},
+{"id":135,"restaurantId":10,"name":"Chicken Combo Meal","price":299,"category":"Combo","isVeg":false,"rating":4.5,"image":"https://source.unsplash.com/600x400/?taco-meal"},
+{"id":136,"restaurantId":10,"name":"Veg Fajita","price":199,"category":"Mexican","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?fajita"},
+{"id":137,"restaurantId":10,"name":"Chicken Fajita","price":219,"category":"Mexican","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chicken-fajita"},
+{"id":138,"restaurantId":10,"name":"Mexican Fries","price":149,"category":"Sides","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?loaded-fries"},
+{"id":139,"restaurantId":10,"name":"Spicy Taco","price":159,"category":"Mexican","isVeg":false,"rating":4.4,"image":"https://source.unsplash.com/600x400/?spicy-taco"},
+{"id":140,"restaurantId":10,"name":"Veg Supreme Taco","price":149,"category":"Mexican","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?veg-taco"},
+{"id":141,"restaurantId":10,"name":"Mexican Salad","price":139,"category":"Salad","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?mexican-salad"},
+{"id":142,"restaurantId":10,"name":"Chicken Salad","price":159,"category":"Salad","isVeg":false,"rating":4.3,"image":"https://source.unsplash.com/600x400/?chicken-salad"},
+{"id":143,"restaurantId":10,"name":"Guacamole Dip","price":119,"category":"Sides","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?guacamole"},
+{"id":144,"restaurantId":10,"name":"Mexican Chips","price":99,"category":"Sides","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?tortilla-chips"},
+{"id":145,"restaurantId":10,"name":"Chocolate Taco","price":129,"category":"Dessert","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?dessert-taco"},
+{"id":146,"restaurantId":10,"name":"Strawberry Shake","price":129,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?strawberry-milkshake"},
+{"id":147,"restaurantId":10,"name":"Mango Shake","price":129,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?mango-shake"},
+{"id":148,"restaurantId":10,"name":"Lemon Soda","price":79,"category":"Beverage","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?lemon-soda"},
+{"id":149,"restaurantId":10,"name":"Mexican Iced Tea","price":99,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?iced-tea"},
+{"id":150,"restaurantId":10,"name":"Chocolate Milkshake","price":139,"category":"Beverage","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chocolate-milkshake"}
+]
 }
