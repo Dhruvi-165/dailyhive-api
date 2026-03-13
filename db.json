@@ -208,5 +208,114 @@
     }
   ],
 
-  "providerNotifications": []
+  "providerNotifications": [],
+
+  "restaurants": [
+  {
+    "id": 1,
+    "name": "Dominos Pizza",
+    "rating": 4.5,
+    "deliveryTime": "30 mins",
+    "category": "Pizza",
+    "image": "pizza"
+  },
+  {
+    "id": 2,
+    "name": "McDonald's",
+    "rating": 4.3,
+    "deliveryTime": "25 mins",
+    "category": "Fast Food",
+    "image": "burger"
+  },
+  {
+    "id": 3,
+    "name": "KFC",
+    "rating": 4.4,
+    "deliveryTime": "28 mins",
+    "category": "Chicken",
+    "image": "chicken"
+  },
+  {
+    "id": 4,
+    "name": "Subway",
+    "rating": 4.2,
+    "deliveryTime": "20 mins",
+    "category": "Healthy",
+    "image": "sandwich"
+  },
+  {
+    "id": 5,
+    "name": "Pizza Hut",
+    "rating": 4.3,
+    "deliveryTime": "32 mins",
+    "category": "Pizza",
+    "image": "pizza"
+  }
+],
+"menu": [
+  {
+    "id": 1,
+    "restaurantId": 1,
+    "name": "Margherita Pizza",
+    "price": 199,
+    "category": "Pizza"
+  },
+  {
+    "id": 2,
+    "restaurantId": 1,
+    "name": "Peppy Paneer Pizza",
+    "price": 299,
+    "category": "Pizza"
+  },
+  {
+    "id": 3,
+    "restaurantId": 2,
+    "name": "Veg Burger",
+    "price": 129,
+    "category": "Burger"
+  },
+  {
+    "id": 4,
+    "restaurantId": 2,
+    "name": "McAloo Tikki",
+    "price": 99,
+    "category": "Burger"
+  },
+  {
+    "id": 5,
+    "restaurantId": 3,
+    "name": "Chicken Bucket",
+    "price": 399,
+    "category": "Chicken"
+  },
+  {
+    "id": 6,
+    "restaurantId": 3,
+    "name": "Zinger Burger",
+    "price": 189,
+    "category": "Burger"
+  },
+  {
+    "id": 7,
+    "restaurantId": 4,
+    "name": "Veg Subway",
+    "price": 149,
+    "category": "Sandwich"
+  },
+  {
+    "id": 8,
+    "restaurantId": 4,
+    "name": "Paneer Subway",
+    "price": 179,
+    "category": "Sandwich"
+  },
+  {
+    "id": 9,
+    "restaurantId": 5,
+    "name": "Farmhouse Pizza",
+    "price": 329,
+    "category": "Pizza"
+  }
+]
+
 }
