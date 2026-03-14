@@ -575,5 +575,12 @@
 {"id":148,"restaurantId":10,"name":"Lemon Soda","price":79,"category":"Beverage","isVeg":true,"rating":4.2,"image":"https://source.unsplash.com/600x400/?lemon-soda"},
 {"id":149,"restaurantId":10,"name":"Mexican Iced Tea","price":99,"category":"Beverage","isVeg":true,"rating":4.3,"image":"https://source.unsplash.com/600x400/?iced-tea"},
 {"id":150,"restaurantId":10,"name":"Chocolate Milkshake","price":139,"category":"Beverage","isVeg":true,"rating":4.4,"image":"https://source.unsplash.com/600x400/?chocolate-milkshake"}
-]
+],
+
+"cities": [],
+"routes": [],
+"buses": [],
+"busSeats": [],
+"ticketBookings": []
+
 }
