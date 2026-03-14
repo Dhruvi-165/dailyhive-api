@@ -579,8 +579,11 @@
 
 "cities": [],
 "routes": [],
+"providers": [],
 "buses": [],
 "busSeats": [],
-"ticketBookings": []
+"boardingPoints": [],
+"ticketBookings": [],
+"passengers": []
 
 }
