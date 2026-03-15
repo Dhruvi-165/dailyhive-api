@@ -1,5 +1,14 @@
 const fs = require("fs")
 
+// Load existing database
+let db = {}
+
+try {
+  db = JSON.parse(fs.readFileSync("db.json"))
+} catch (e) {
+  db = {}
+}
+
 const cities = [
 "Ahmedabad",
 "Surat",
@@ -35,122 +44,118 @@ let busId = 1
 let seatId = 1
 let boardingId = 1
 
-// Cities
-cities.forEach((city,i)=>{
-    cityData.push({
-        id:i+1,
-        name:city
-    })
+// Generate Cities
+cities.forEach((city, i) => {
+  cityData.push({
+    id: i + 1,
+    name: city
+  })
 })
-
 
 // Providers
-providers.push({
-    id:1,
-    name:"GSRTC",
-    type:"bus_operator",
-    contact:"9876543210"
-})
+providers = [
+{
+  id: 1,
+  name: "GSRTC",
+  type: "bus_operator",
+  contact: "9876543210"
+},
+{
+  id: 2,
+  name: "Patel Travels",
+  type: "bus_operator",
+  contact: "9876543211"
+},
+{
+  id: 3,
+  name: "VRL Travels",
+  type: "bus_operator",
+  contact: "9876543212"
+},
+{
+  id: 4,
+  name: "DailyHive Travels",
+  type: "bus_operator",
+  contact: "9876543213"
+}
+]
 
-providers.push({
-    id:2,
-    name:"Patel Travels",
-    type:"bus_operator",
-    contact:"9876543211"
-})
+// Generate routes and buses
+for (let i = 0; i < cities.length; i++) {
 
-providers.push({
-    id:3,
-    name:"VRL Travels",
-    type:"bus_operator",
-    contact:"9876543212"
-})
+  for (let j = 0; j < cities.length; j++) {
 
-providers.push({
-    id:4,
-    name:"DailyHive Travels",
-    type:"bus_operator",
-    contact:"9876543213"
-})
+    if (i !== j) {
 
+      routes.push({
+        id: routeId,
+        from: cities[i],
+        to: cities[j],
+        distance: 200 + Math.floor(Math.random() * 400)
+      })
 
-// Routes
-for(let i=0;i<cities.length;i++){
-    for(let j=0;j<cities.length;j++){
+      for (let k = 0; k < 2; k++) {
 
-        if(i!==j){
+        const providerId =
+        Math.floor(Math.random() * providers.length) + 1
 
-            routes.push({
-                id:routeId,
-                from:cities[i],
-                to:cities[j],
-                distance:200 + Math.floor(Math.random()*400)
-            })
+        buses.push({
+          id: busId,
+          busName: "Express " + busId,
+          providerId,
+          routeId,
+          departure: `${6 + k}:00`,
+          arrival: `${10 + k}:30`,
+          price: 300 + Math.floor(Math.random() * 700),
+          busType: "AC Sleeper",
+          totalSeats: 40
+        })
 
-            // create buses
-            for(let k=0;k<2;k++){
+        boardingPoints.push({
+          id: boardingId++,
+          busId,
+          location: cities[i] + " Central Bus Stand",
+          time: `${6 + k}:00`
+        })
 
-                const providerId = Math.floor(Math.random()*providers.length)+1
+        boardingPoints.push({
+          id: boardingId++,
+          busId,
+          location: cities[i] + " Highway Point",
+          time: `${6 + k}:20`
+        })
 
-                buses.push({
-                    id:busId,
-                    busName:"Express "+busId,
-                    providerId:providerId,
-                    routeId:routeId,
-                    departure:`${6+k}:00`,
-                    arrival:`${10+k}:30`,
-                    price:300+Math.floor(Math.random()*700),
-                    busType:"AC Sleeper",
-                    totalSeats:40
-                })
+        for (let s = 1; s <= 40; s++) {
 
-                // Boarding points
-                boardingPoints.push({
-                    id:boardingId++,
-                    busId:busId,
-                    location:cities[i]+" Central Bus Stand",
-                    time:`${6+k}:00`
-                })
+          busSeats.push({
+            id: seatId++,
+            busId,
+            seatNumber: "S" + s,
+            status: "available"
+          })
 
-                boardingPoints.push({
-                    id:boardingId++,
-                    busId:busId,
-                    location:cities[i]+" Highway Point",
-                    time:`${6+k}:20`
-                })
-
-                // Seats
-                for(let s=1;s<=40;s++){
-
-                    busSeats.push({
-                        id:seatId++,
-                        busId:busId,
-                        seatNumber:"S"+s,
-                        status:"available"
-                    })
-                }
-
-                busId++
-            }
-
-            routeId++
         }
+
+        busId++
+      }
+
+      routeId++
     }
+  }
 }
 
+// Merge with existing database
+db.cities = cityData
+db.routes = routes
+db.providers = providers
+db.buses = buses
+db.busSeats = busSeats
+db.boardingPoints = boardingPoints
 
-// Final database
-const data={
-cities:cityData,
-routes,
-providers,
-buses,
-busSeats,
-boardingPoints,
-ticketBookings:[],
-passengers:[]
-}
+// Ensure arrays exist
+db.ticketBookings = db.ticketBookings || []
+db.passengers = db.passengers || []
 
-fs.writeFileSync("db.json",JSON.stringify(data,null,2))
+fs.writeFileSync("db.json", JSON.stringify(db, null, 2))
 
 console.log("Travel API generated successfully")

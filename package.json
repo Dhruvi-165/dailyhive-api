@@ -1,10 +1,12 @@
+
 {
   "name": "dailyhive-api",
   "version": "1.0.0",
   "description": "DailyHive Utility API",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT"
+    "generate": "node generate_travel_data.js",
+    "start": "npm run generate && json-server --watch db.json --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "json-server": "^0.17.3"
